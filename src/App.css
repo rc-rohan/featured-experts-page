@@ -14,13 +14,20 @@ html {
 img {
   display: inline-block;
   width: 100%;
+  border-radius: 50%;
 }
 
 li {
   list-style: none;
 }
 
-.header {
+.icons {
+  font-size: 2rem;
+  padding: 0 1rem;
+  color: #f38454;
+}
+
+.app .header {
   background: #fae5d7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,8 +40,8 @@ li {
           align-items: center;
 }
 
-.header .logo {
-  padding: 0 3rem;
+.app .header .logo {
+  margin: 0 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,17 +50,17 @@ li {
           align-items: center;
 }
 
-.header .logo__name {
+.app .header .logo__name {
   padding: 0 0.5rem;
 }
 
-.header .logo__symbol {
+.app .header .logo__symbol {
   border-radius: 50%;
   padding: 1rem;
   background: #51c983;
 }
 
-.header .navigation-links ul {
+.app .header .navigation-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,40 +69,33 @@ li {
           align-items: center;
 }
 
-.header .navigation-links ul li {
+.app .header .navigation-links ul li {
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0 3rem;
 }
 
-.header .navigation-links ul .selected {
+.app .header .navigation-links ul .selected {
   padding: 1.2rem;
   color: #f38454;
   border-bottom: 3px solid #f38454;
 }
 
-.header img {
-  border-radius: 50%;
-}
-
-.header .dropdowns {
+.app .header .dropdowns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5rem 0 0;
+  margin-right: 6rem;
 }
 
-.header .dropdowns .icons {
-  display: inline-block;
-  border: 2px solid red;
-  background-color: red;
-  padding: 0 2rem;
+.app .header .dropdowns .profile__picture {
+  margin-left: 2rem;
 }
 
-.header .dropdowns .image-area {
+.app .header .dropdowns .image-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,6 +105,203 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 4rem;
+  width: 3rem;
+}
+
+.app__flex-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #f7f9fc;
+}
+
+.app .filters {
+  margin: 2rem 2rem 1rem 3rem;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+.app .filters__attributes {
+  margin-top: 3rem;
+  border: 1px solid #dee0e2;
+  border-radius: 0.5rem;
+  background: #fff;
+  height: 100%;
+}
+
+.app .expertsDetails {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  margin: 2rem 4rem 1rem 1em;
+}
+
+.app .expertsDetails .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .expertsDetails .heading .selector {
+  background: #fff;
+  padding: 0.5rem 2rem;
+  border: 1px solid #dee0e2;
+}
+
+.app .expertsDetails .card {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1rem 2rem 2rem;
+  border: 1px solid #dee0e2;
+  border-radius: 0.5rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app .expertsDetails .card .profile-secondaryData {
+  margin-right: 2rem;
+}
+
+.app .expertsDetails .card .profile-secondaryData .profile__picture {
+  width: 8rem;
+  z-index: 2;
+}
+
+.app .expertsDetails .card .profile-secondaryData .price {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #9eaec1;
+  font-size: 1.2rem;
+}
+
+.app .expertsDetails .card .profile-secondaryData .price__value {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #98ddcd;
+  padding: 0 1rem;
+}
+
+.app .expertsDetails .card .profile-secondaryData .rating {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.app .expertsDetails .card .profile-secondaryData .rating .icons {
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.app .expertsDetails .card .profile-secondaryData .rating .rating__value {
+  color: #f38454;
+  margin: 0 1rem;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile__header-detials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile__header-detials .profile__name {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile__header-detials .profile__designation {
+  font-size: 1.3rem;
+  color: #63697c;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile__header-detials .profile__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile__header-detials .profile__buttons .icons {
+  margin-right: 2rem;
+  font-size: 2.7rem;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile__header-detials .profile__buttons .btn {
+  color: #fff;
+  background-color: #f38454;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.app .expertsDetails .card .profile-primaryData .langauage-location-details {
+  color: #9eaec1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+  font-size: 1.3rem;
+}
+
+.app .expertsDetails .card .profile-primaryData .langauage-location-details span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .expertsDetails .card .profile-primaryData .langauage-location-details span .icons {
+  padding: 0;
+  padding-right: 1rem;
+  font-size: 2rem;
+  color: #9eaec1;
+}
+
+.app .expertsDetails .card .profile-primaryData .langauage-location-details .location-available {
+  margin: 0 2rem;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile-text {
+  margin: 3rem 0 2rem;
+  color: #63697c;
+  font-size: 1.3rem;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.app .expertsDetails .card .profile-primaryData .profile__tags strong {
+  padding: .5rem 1.5rem;
+  background-color: #edf1f7;
+  color: #96a1b3;
+  letter-spacing: .1rem;
+  margin-right: 1.5rem;
+  border-radius: 10rem;
 }
 /*# sourceMappingURL=App.css.map */

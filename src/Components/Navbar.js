@@ -1,11 +1,7 @@
 import React from "react";
-import "boxicons";
 import profilePic from "../dummyImage.jpg";
 
 const Navbar = () => {
-
-
-  
   return (
     <header className="header">
       <div className="logo">
@@ -17,27 +13,19 @@ const Navbar = () => {
           <li>Dashboard</li>
           <li className="selected">Find Experts</li>
           <li>Discussion</li>
-        <span className='slide show-selected'></span>
+          <span className="slide show-selected"></span>
         </ul>
       </nav>
 
       <div className="dropdowns">
-        <box-icon name="bell" className="icons" color="#f38454"></box-icon>
-        <box-icon
-          name="message-detail"
-          className="icons"
-          color="#f38454"
-        ></box-icon>
+        <i className="icons bx bx-bell"></i>
+        <i className="icons bx bx-message-detail"></i>
         <div className="profile__picture">
           <div className="image-area">
             <img className="user__profile-pic" src={profilePic} alt="" />
           </div>
         </div>
-        <box-icon
-          name="chevron-down"
-          className="icons"
-          color="#f38454"
-        ></box-icon>
+        <i className="icons bx bxs-chevron-down icons"></i>
       </div>
     </header>
   );
