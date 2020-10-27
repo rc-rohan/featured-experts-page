@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+*,
+*:after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  display: inline-block;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  list-style: none;
+}
+
+.header {
+  background: #fae5d7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header .logo {
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .logo__name {
+  padding: 0 0.5rem;
 }
+
+.header .logo__symbol {
+  border-radius: 50%;
+  padding: 1rem;
+  background: #51c983;
+}
+
+.header .navigation-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navigation-links ul li {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 3rem;
+}
+
+.header .navigation-links ul .selected {
+  padding: 1.2rem;
+  color: #f38454;
+  border-bottom: 3px solid #f38454;
+}
+
+.header img {
+  border-radius: 50%;
+}
+
+.header .dropdowns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5rem 0 0;
+}
+
+.header .dropdowns .icons {
+  display: inline-block;
+  border: 2px solid red;
+  background-color: red;
+  padding: 0 2rem;
+}
+
+.header .dropdowns .image-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+}
+/*# sourceMappingURL=App.css.map */
