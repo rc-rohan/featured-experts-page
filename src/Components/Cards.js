@@ -1,6 +1,8 @@
 import React from "react";
 import DummyImage from "../dummyImage.jpg";
 
+// todo :  Add the favroutes icons with state and change the icons based upon that
+
 function Cards() {
   return (
     <div className="card">
