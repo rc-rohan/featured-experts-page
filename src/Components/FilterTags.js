@@ -4,7 +4,7 @@ function FilterTags({className,value}) {
   return (
     <span className={className}>
       <small>{value}</small>
-      <i class="bx bx-x"></i>
+      <i className="tag-icons bx bx-x"></i>
     </span>
   );
 }

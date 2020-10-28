@@ -94,7 +94,7 @@ li {
 
   .filters {
     margin: 2rem 2rem 1rem 3rem;
-    flex: 0.2;
+    flex: 0.25;
 
     &__attributes {
       margin-top: 3rem;
@@ -102,15 +102,97 @@ li {
       border-radius: 0.5rem;
       background: #fff;
       height: 100%;
+      padding: 1rem;
+      font-size: 1.2rem;
 
-      .expertise{
-          
+      .filter__name {
+        display:inline-block;
+        font-size: 1.2rem;
+        color: #96a1b3;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-bottom: 1rem;
+
+      }
+      .search-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 2.8rem;
+        border: 1px solid #dee0e2;
+        background-color: #edf1f7;
+        padding: .5rem 1rem;
+      }
+      .filter-tags {
+        align-items: center;
+        color: #fff;
+        border-radius: 10rem;
+        padding: 0.1rem 1rem;
+        margin-right: 0.5rem;
+        .tag-icons {
+          display: inline-block;
+          padding: 0 0 0 0.4rem;
+        }
+      }
+      .dark {
+        background-color: #3c67e8;
+      }
+      .light{
+        background-color: #a7cd6e;
+      }
+      .other-filter-tags{
+        padding: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .input-field{
+        width: 1.6rem ;
+        height: 1.6rem;
+        margin-right: .5rem;
+      }
+
+      .rating{
+        &__filter{
+          padding-right: 3rem;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          margin-bottom: 2rem;
+
+          &>div>div{
+            margin: 0 1.2rem 1rem 0 ;
+            display: flex;
+            align-items: center;
+              .icons{
+                padding-right: .2rem;
+                font-size: 1.2rem;
+              }
+          }
+        }
+      }
+
+
+      .checkbox__filters{
+        margin-bottom: 2rem;
+        &>div{
+          display: flex;
+          align-items: center;
+          margin: .8rem 0;
+          font-size: 1.3rem;
+        }
+      }
+
+      .more__filters{
+        color: #98ddcd;
+        padding-left: 2rem;
+        font-size: 1.4rem;
       }
     }
   }
 
   .expertsDetails {
-    flex: 0.8;
+    flex: 0.75;
     // border: 2px solid red;
     margin: 2rem 4rem 1rem 1em;
 
@@ -201,16 +283,16 @@ li {
           }
         }
         .langauage-location-details {
-          color:#9eaec1;
+          color: #9eaec1;
           display: flex;
           margin-top: 3rem;
           font-size: 1.3rem;
 
-          span{
+          span {
             display: flex;
             align-items: center;
 
-            .icons{
+            .icons {
               padding: 0;
               padding-right: 1rem;
               font-size: 2rem;
@@ -218,27 +300,25 @@ li {
             }
           }
 
-          .location-available{
+          .location-available {
             margin: 0 2rem;
           }
-
         }
-        .profile-text{
+        .profile-text {
           margin: 3rem 0 2rem;
           color: #63697c;
           font-size: 1.3rem;
-
         }
-        .profile__tags{
+        .profile__tags {
           display: flex;
           justify-content: flex-start;
 
-          strong{
-            padding: .5rem 1.5rem;
-            background-color:#edf1f7;
+          strong {
+            padding: 0.5rem 1.5rem;
+            background-color: #edf1f7;
             color: #96a1b3;
-            letter-spacing: .1rem;
-            margin-right:1.5rem ;
+            letter-spacing: 0.1rem;
+            margin-right: 1.5rem;
             border-radius: 10rem;
           }
         }

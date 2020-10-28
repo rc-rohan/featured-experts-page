@@ -1,7 +1,7 @@
 import React from "react";
 import FilterTags from "./FilterTags";
 import FilterCheckBoxes from "./FilterCheckboxes";
-import RatingCheckBoxes from "./RatingCheckboxes";
+import RatingCheckboxes from "./RatingCheckboxes";
 
 function FilterSection() {
   return (
@@ -12,9 +12,11 @@ function FilterSection() {
           <strong className="filter__name">EXPERTISE</strong>
           <div className="search-box">
             <FilterTags className="filter-tags dark" value="Branding" />
-            <i class="bx bx-search"></i>
+            <i className="bx bx-search"></i>
           </div>
-          <FilterTags className="filter-tags light" value="Strategy" />
+          <div className="other-filter-tags">
+            <FilterTags className="filter-tags light" value="Strategy" />
+          </div>
         </div>
 
         <div className="focus-area">
@@ -24,29 +26,48 @@ function FilterSection() {
               <FilterTags className="filter-tags dark" value="Focus Area" />
               <FilterTags className="filter-tags dark" value="Focus Area" />
             </div>
-            <i class="bx bx-search"></i>
+            <i className="bx bx-search"></i>
           </div>
-          <FilterTags className="filter-tags light" value="Focus Area" />
-          <FilterTags className="filter-tags dark" value="Focus Area" />
+          <div className="other-filter-tags">
+            <FilterTags className="filter-tags light" value="Focus Area" />
+            <FilterTags className="filter-tags dark" value="Focus Area" />
+          </div>
         </div>
         <div className="rating">
-          <RatingCheckBoxes value={4} />
-          <RatingCheckBoxes value={3} />
-          <RatingCheckBoxes value={3} />
-          <RatingCheckBoxes value={2} />
+          <strong className="filter__name">Ratings</strong>
+          <div className="rating__filter">
+            <div>
+              <RatingCheckboxes value={[1, 1, 1, 1]} />
+              <RatingCheckboxes value={[1, 1, 1]} />
+            </div>
+            <div>
+              <RatingCheckboxes value={[1, 1, 1]} />
+              <RatingCheckboxes value={[1, 1]} />
+            </div>
+          </div>
         </div>
         <FilterCheckBoxes
           type="Price"
           values={["Free", "Less Than $25", "$25-$50", "More than $50"]}
         />
         <FilterCheckBoxes
-          type="session availability"
+          type="Session availability"
           values={["30 min", "60 min", "25 min"]}
         />
         <FilterCheckBoxes
           type="Price"
-          values={["English", "French", "German", "Arabic", "Hindi", "Mandarian Chinese"]}
+          values={[
+            "English",
+            "French",
+            "German",
+            "Arabic",
+            "Hindi",
+            "Mandarian Chinese",
+          ]}
         />
+        <div className="more__filters">
+          <strong>more..</strong>
+        </div>
       </div>
     </section>
   );
